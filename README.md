@@ -12,6 +12,15 @@ It provides fast, flexible, and expressive data structures designed to work with
 - **Window Functions**: Rolling, expanding, and time-based window operations
 - **Aggregate Data**: GroupBy, pivot tables, and summary statistics
 
+pandas-examples/
+├── data/
+│   └── dataset.csv
+├── notebooks/
+│   └── data_cleaning.ipynb
+├── src/
+│   └── utils.py
+└── README.md
+
 ## Installation
 
 ```bash
@@ -39,11 +48,4 @@ df['Rolling_Avg'] = df['Sales'].rolling(window=7).mean()
 # 6. Aggregate data
 summary = df.groupby('Department')['Salary'].agg(['mean', 'sum', 'count'])
 
-pandas-examples/
-├── data/
-│   └── dataset.csv
-├── notebooks/
-│   └── data_cleaning.ipynb
-├── src/
-│   └── utils.py
-└── README.md
+
